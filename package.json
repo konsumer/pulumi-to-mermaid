@@ -1,16 +1,16 @@
 {
-  "name": "pulumi-to-plantuml",
+  "name": "pulumi-to-mermaid",
   "version": "0.0.0",
-  "description": "Turn pulumi stack JSON into a plantuml graph",
+  "description": "Turn pulumi stack JSON into a mermaid graph",
   "type": "module",
   "exports": "./index.js",
   "scripts": {
-    "test": "node pulumi-to-plantuml.js test.json"
+    "test": "node pulumi-to-mermaid.js test.json"
   },
   "bin": {
-    "pulumi-to-plantuml": "pulumi-to-plantuml.js"
+    "pulumi-to-mermaid": "pulumi-to-mermaid.js"
   },
-  "keywords": ["pulumi", "uml", "graph", "plantuml"],
+  "keywords": ["pulumi", "uml", "graph", "mermaid"],
   "author": "David Konsumer <dkonsumer@gummicube.com>",
   "license": "MIT"
 }

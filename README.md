@@ -1,4 +1,4 @@
-This will turn the output of `pulumi preview --json` into a [plantuml](https://plantuml.com/) diagram.
+This will turn the output of `pulumi preview --json` into a [mermaid](https://mermaid.js.org/) diagram.
 
 
 # WIP
