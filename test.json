@@ -7,9 +7,9 @@
     "steps": [
         {
             "op": "same",
-            "urn": "urn:pulumi:demo-us::demo::pulumi:pulumi:Stack::demo-demo-us",
+            "urn": "urn:pulumi:signal-us::signal::pulumi:pulumi:Stack::signal-signal-us",
             "oldState": {
-                "urn": "urn:pulumi:demo-us::demo::pulumi:pulumi:Stack::demo-demo-us",
+                "urn": "urn:pulumi:signal-us::signal::pulumi:pulumi:Stack::signal-signal-us",
                 "custom": false,
                 "type": "pulumi:pulumi:Stack",
                 "outputs": {
@@ -19,7 +19,7 @@
                 "modified": "0001-01-01T00:00:00Z"
             },
             "newState": {
-                "urn": "urn:pulumi:demo-us::demo::pulumi:pulumi:Stack::demo-demo-us",
+                "urn": "urn:pulumi:signal-us::signal::pulumi:pulumi:Stack::signal-signal-us",
                 "custom": false,
                 "type": "pulumi:pulumi:Stack",
                 "created": "0001-01-01T00:00:00Z",
@@ -29,72 +29,46 @@
         },
         {
             "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::cloud:service:Service::demo-runner",
+            "urn": "urn:pulumi:signal-us::signal::awsx:cluster:Cluster::pulumi-signal-us-global",
             "newState": {
-                "urn": "urn:pulumi:demo-us::demo::cloud:service:Service::demo-runner",
-                "custom": false,
-                "type": "cloud:service:Service",
-                "parent": "urn:pulumi:demo-us::demo::pulumi:pulumi:Stack::demo-demo-us",
-                "sourcePosition": "project:///node_modules/@pulumi/service.ts#681,9"
-            },
-            "detailedDiff": null
-        },
-        {
-            "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure::global-infrastructure",
-            "newState": {
-                "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure::global-infrastructure",
-                "custom": false,
-                "type": "cloud:global:infrastructure",
-                "parent": "urn:pulumi:demo-us::demo::pulumi:pulumi:Stack::demo-demo-us",
-                "sourcePosition": "project:///node_modules/@pulumi/shared.ts#81,40"
-            },
-            "detailedDiff": null
-        },
-        {
-            "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::awsx:cluster:Cluster::pulumi-demo-us-global",
-            "newState": {
-                "urn": "urn:pulumi:demo-us::demo::awsx:cluster:Cluster::pulumi-demo-us-global",
+                "urn": "urn:pulumi:signal-us::signal::awsx:cluster:Cluster::pulumi-signal-us-global",
                 "custom": false,
                 "type": "awsx:cluster:Cluster",
-                "parent": "urn:pulumi:demo-us::demo::pulumi:pulumi:Stack::demo-demo-us",
+                "parent": "urn:pulumi:signal-us::signal::pulumi:pulumi:Stack::signal-signal-us",
                 "sourcePosition": "project:///node_modules/@pulumi/shared.ts#207,23"
             },
             "detailedDiff": null
         },
         {
             "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::cloud:service:Service$aws:cloudwatch/logGroup:LogGroup::demo-runner",
-            "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "urn": "urn:pulumi:signal-us::signal::cloud:service:Service::signal-runner",
             "newState": {
-                "urn": "urn:pulumi:demo-us::demo::cloud:service:Service$aws:cloudwatch/logGroup:LogGroup::demo-runner",
-                "custom": true,
-                "type": "aws:cloudwatch/logGroup:LogGroup",
-                "inputs": {
-                    "__defaults": [
-                        "name",
-                        "skipDestroy"
-                    ],
-                    "name": "demo-runner-558c367",
-                    "retentionInDays": 1,
-                    "skipDestroy": false
-                },
-                "parent": "urn:pulumi:demo-us::demo::cloud:service:Service::demo-runner",
-                "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
-                "propertyDependencies": {
-                    "retentionInDays": null
-                },
-                "sourcePosition": "project:///node_modules/@pulumi/service.ts#495,22"
+                "urn": "urn:pulumi:signal-us::signal::cloud:service:Service::signal-runner",
+                "custom": false,
+                "type": "cloud:service:Service",
+                "parent": "urn:pulumi:signal-us::signal::pulumi:pulumi:Stack::signal-signal-us",
+                "sourcePosition": "project:///node_modules/@pulumi/service.ts#681,9"
             },
             "detailedDiff": null
         },
         {
             "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::aws:ecr/repository:Repository::pulum-1e1f83bf-container",
-            "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure::global-infrastructure",
             "newState": {
-                "urn": "urn:pulumi:demo-us::demo::aws:ecr/repository:Repository::pulum-1e1f83bf-container",
+                "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure::global-infrastructure",
+                "custom": false,
+                "type": "cloud:global:infrastructure",
+                "parent": "urn:pulumi:signal-us::signal::pulumi:pulumi:Stack::signal-signal-us",
+                "sourcePosition": "project:///node_modules/@pulumi/shared.ts#81,40"
+            },
+            "detailedDiff": null
+        },
+        {
+            "op": "create",
+            "urn": "urn:pulumi:signal-us::signal::aws:ecr/repository:Repository::pulum-1e1f83bf-container",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "newState": {
+                "urn": "urn:pulumi:signal-us::signal::aws:ecr/repository:Repository::pulum-1e1f83bf-container",
                 "custom": true,
                 "type": "aws:ecr/repository:Repository",
                 "inputs": {
@@ -104,10 +78,10 @@
                     ],
                     "forceDelete": true,
                     "imageTagMutability": "MUTABLE",
-                    "name": "pulum-1e1f83bf-container-e19d62d"
+                    "name": "pulum-1e1f83bf-container-a369807"
                 },
-                "parent": "urn:pulumi:demo-us::demo::pulumi:pulumi:Stack::demo-demo-us",
-                "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "parent": "urn:pulumi:signal-us::signal::pulumi:pulumi:Stack::signal-signal-us",
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
                 "propertyDependencies": {
                     "forceDelete": null
                 },
@@ -117,40 +91,85 @@
         },
         {
             "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo-us-task",
-            "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "urn": "urn:pulumi:signal-us::signal::aws:s3/bucket:Bucket::signal-data",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_6_8_0::70283f37-a4eb-4f26-8711-57c3ff44ad4e",
             "newState": {
-                "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo-us-task",
+                "urn": "urn:pulumi:signal-us::signal::aws:s3/bucket:Bucket::signal-data",
                 "custom": true,
-                "type": "aws:iam/role:Role",
+                "type": "aws:s3/bucket:Bucket",
                 "inputs": {
                     "__defaults": [
-                        "forceDetachPolicies",
-                        "maxSessionDuration",
-                        "name",
-                        "path"
+                        "bucket"
                     ],
-                    "assumeRolePolicy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Action\":\"sts:AssumeRole\",\"Principal\":{\"Service\":\"ecs-tasks.amazonaws.com\"},\"Effect\":\"Allow\",\"Sid\":\"\"}]}",
-                    "forceDetachPolicies": false,
-                    "maxSessionDuration": 3600,
-                    "name": "pulumi-demo-us-task-8174149",
-                    "path": "/"
+                    "acl": "public-read",
+                    "bucket": "signal-data-c8dee17",
+                    "forceDestroy": true
                 },
-                "parent": "urn:pulumi:demo-us::demo::cloud:global:infrastructure::global-infrastructure",
-                "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "parent": "urn:pulumi:signal-us::signal::pulumi:pulumi:Stack::signal-signal-us",
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_6_8_0::70283f37-a4eb-4f26-8711-57c3ff44ad4e",
                 "propertyDependencies": {
-                    "assumeRolePolicy": null
+                    "acl": null,
+                    "forceDestroy": null
                 },
-                "sourcePosition": "project:///node_modules/@pulumi/service.ts#453,20"
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "sourcePosition": "project:///node_modules/@pulumi/s3/bucket.ts#525,9"
             },
             "detailedDiff": null
         },
         {
             "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo--execution",
-            "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "urn": "urn:pulumi:signal-us::signal::awsx:cluster:Cluster$aws:ecs/cluster:Cluster::pulumi-signal-us-global",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
             "newState": {
-                "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo--execution",
+                "urn": "urn:pulumi:signal-us::signal::awsx:cluster:Cluster$aws:ecs/cluster:Cluster::pulumi-signal-us-global",
+                "custom": true,
+                "type": "aws:ecs/cluster:Cluster",
+                "inputs": {
+                    "__defaults": [
+                        "name"
+                    ],
+                    "name": "pulumi-signal-us-global-e38a853"
+                },
+                "parent": "urn:pulumi:signal-us::signal::awsx:cluster:Cluster::pulumi-signal-us-global",
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "sourcePosition": "project:///node_modules/@pulumi/cluster.ts#152,25"
+            },
+            "detailedDiff": null
+        },
+        {
+            "op": "create",
+            "urn": "urn:pulumi:signal-us::signal::cloud:service:Service$aws:cloudwatch/logGroup:LogGroup::signal-runner",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "newState": {
+                "urn": "urn:pulumi:signal-us::signal::cloud:service:Service$aws:cloudwatch/logGroup:LogGroup::signal-runner",
+                "custom": true,
+                "type": "aws:cloudwatch/logGroup:LogGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name",
+                        "skipDestroy"
+                    ],
+                    "name": "signal-runner-556b6e2",
+                    "retentionInDays": 1,
+                    "skipDestroy": false
+                },
+                "parent": "urn:pulumi:signal-us::signal::cloud:service:Service::signal-runner",
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "propertyDependencies": {
+                    "retentionInDays": null
+                },
+                "sourcePosition": "project:///node_modules/@pulumi/service.ts#495,22"
+            },
+            "detailedDiff": null
+        },
+        {
+            "op": "create",
+            "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal--execution",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "newState": {
+                "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal--execution",
                 "custom": true,
                 "type": "aws:iam/role:Role",
                 "inputs": {
@@ -163,11 +182,11 @@
                     "assumeRolePolicy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Action\":\"sts:AssumeRole\",\"Principal\":{\"Service\":\"ecs-tasks.amazonaws.com\"},\"Effect\":\"Allow\",\"Sid\":\"\"}]}",
                     "forceDetachPolicies": false,
                     "maxSessionDuration": 3600,
-                    "name": "pulumi-demo--execution-9b2e52c",
+                    "name": "pulumi-signal--execution-94037fe",
                     "path": "/"
                 },
-                "parent": "urn:pulumi:demo-us::demo::cloud:global:infrastructure::global-infrastructure",
-                "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "parent": "urn:pulumi:signal-us::signal::cloud:global:infrastructure::global-infrastructure",
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
                 "propertyDependencies": {
                     "assumeRolePolicy": null
                 },
@@ -177,46 +196,56 @@
         },
         {
             "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::awsx:cluster:Cluster$aws:ecs/cluster:Cluster::pulumi-demo-us-global",
-            "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal-us-task",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
             "newState": {
-                "urn": "urn:pulumi:demo-us::demo::awsx:cluster:Cluster$aws:ecs/cluster:Cluster::pulumi-demo-us-global",
+                "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal-us-task",
                 "custom": true,
-                "type": "aws:ecs/cluster:Cluster",
+                "type": "aws:iam/role:Role",
                 "inputs": {
                     "__defaults": [
-                        "name"
+                        "forceDetachPolicies",
+                        "maxSessionDuration",
+                        "name",
+                        "path"
                     ],
-                    "name": "pulumi-demo-us-global-e604daf"
+                    "assumeRolePolicy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Action\":\"sts:AssumeRole\",\"Principal\":{\"Service\":\"ecs-tasks.amazonaws.com\"},\"Effect\":\"Allow\",\"Sid\":\"\"}]}",
+                    "forceDetachPolicies": false,
+                    "maxSessionDuration": 3600,
+                    "name": "pulumi-signal-us-task-a07d8e1",
+                    "path": "/"
                 },
-                "parent": "urn:pulumi:demo-us::demo::awsx:cluster:Cluster::pulumi-demo-us-global",
-                "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
-                "sourcePosition": "project:///node_modules/@pulumi/cluster.ts#152,25"
+                "parent": "urn:pulumi:signal-us::signal::cloud:global:infrastructure::global-infrastructure",
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "propertyDependencies": {
+                    "assumeRolePolicy": null
+                },
+                "sourcePosition": "project:///node_modules/@pulumi/service.ts#453,20"
             },
             "detailedDiff": null
         },
         {
             "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::aws:ecr/lifecyclePolicy:LifecyclePolicy::pulum-1e1f83bf-container",
-            "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "urn": "urn:pulumi:signal-us::signal::aws:ecr/lifecyclePolicy:LifecyclePolicy::pulum-1e1f83bf-container",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
             "newState": {
-                "urn": "urn:pulumi:demo-us::demo::aws:ecr/lifecyclePolicy:LifecyclePolicy::pulum-1e1f83bf-container",
+                "urn": "urn:pulumi:signal-us::signal::aws:ecr/lifecyclePolicy:LifecyclePolicy::pulum-1e1f83bf-container",
                 "custom": true,
                 "type": "aws:ecr/lifecyclePolicy:LifecyclePolicy",
                 "inputs": {
                     "__defaults": [],
                     "policy": "{\"rules\":[{\"rulePriority\":10,\"description\":\"remove untagged images\",\"selection\":{\"tagStatus\":\"untagged\",\"countType\":\"imageCountMoreThan\",\"countNumber\":1},\"action\":{\"type\":\"expire\"}}]}",
-                    "repository": "pulum-1e1f83bf-container-e19d62d"
+                    "repository": "pulum-1e1f83bf-container-a369807"
                 },
-                "parent": "urn:pulumi:demo-us::demo::pulumi:pulumi:Stack::demo-demo-us",
+                "parent": "urn:pulumi:signal-us::signal::pulumi:pulumi:Stack::signal-signal-us",
                 "dependencies": [
-                    "urn:pulumi:demo-us::demo::aws:ecr/repository:Repository::pulum-1e1f83bf-container"
+                    "urn:pulumi:signal-us::signal::aws:ecr/repository:Repository::pulum-1e1f83bf-container"
                 ],
-                "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
                 "propertyDependencies": {
                     "policy": null,
                     "repository": [
-                        "urn:pulumi:demo-us::demo::aws:ecr/repository:Repository::pulum-1e1f83bf-container"
+                        "urn:pulumi:signal-us::signal::aws:ecr/repository:Repository::pulum-1e1f83bf-container"
                     ]
                 },
                 "sourcePosition": "project:///node_modules/@pulumi/service.ts#182,33"
@@ -225,10 +254,10 @@
         },
         {
             "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::cloud:service:Service$aws:ecs/taskDefinition:TaskDefinition::demo-runner",
-            "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "urn": "urn:pulumi:signal-us::signal::cloud:service:Service$aws:ecs/taskDefinition:TaskDefinition::signal-runner",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
             "newState": {
-                "urn": "urn:pulumi:demo-us::demo::cloud:service:Service$aws:ecs/taskDefinition:TaskDefinition::demo-runner",
+                "urn": "urn:pulumi:signal-us::signal::cloud:service:Service$aws:ecs/taskDefinition:TaskDefinition::signal-runner",
                 "custom": true,
                 "type": "aws:ecs/taskDefinition:TaskDefinition",
                 "inputs": {
@@ -238,7 +267,7 @@
                     "containerDefinitions": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
                     "cpu": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
                     "executionRoleArn": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
-                    "family": "demo-runner",
+                    "family": "signal-runner",
                     "memory": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
                     "networkMode": "awsvpc",
                     "requiresCompatibilities": [
@@ -248,35 +277,35 @@
                     "taskRoleArn": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
                     "volumes": []
                 },
-                "parent": "urn:pulumi:demo-us::demo::cloud:service:Service::demo-runner",
+                "parent": "urn:pulumi:signal-us::signal::cloud:service:Service::signal-runner",
                 "dependencies": [
-                    "urn:pulumi:demo-us::demo::aws:ecr/repository:Repository::pulum-1e1f83bf-container",
-                    "urn:pulumi:demo-us::demo::cloud:service:Service$aws:cloudwatch/logGroup:LogGroup::demo-runner",
-                    "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo--execution",
-                    "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo-us-task"
+                    "urn:pulumi:signal-us::signal::aws:ecr/repository:Repository::pulum-1e1f83bf-container",
+                    "urn:pulumi:signal-us::signal::cloud:service:Service$aws:cloudwatch/logGroup:LogGroup::signal-runner",
+                    "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal--execution",
+                    "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal-us-task"
                 ],
-                "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
                 "propertyDependencies": {
                     "containerDefinitions": [
-                        "urn:pulumi:demo-us::demo::aws:ecr/repository:Repository::pulum-1e1f83bf-container",
-                        "urn:pulumi:demo-us::demo::cloud:service:Service$aws:cloudwatch/logGroup:LogGroup::demo-runner"
+                        "urn:pulumi:signal-us::signal::aws:ecr/repository:Repository::pulum-1e1f83bf-container",
+                        "urn:pulumi:signal-us::signal::cloud:service:Service$aws:cloudwatch/logGroup:LogGroup::signal-runner"
                     ],
                     "cpu": [
-                        "urn:pulumi:demo-us::demo::aws:ecr/repository:Repository::pulum-1e1f83bf-container",
-                        "urn:pulumi:demo-us::demo::cloud:service:Service$aws:cloudwatch/logGroup:LogGroup::demo-runner"
+                        "urn:pulumi:signal-us::signal::aws:ecr/repository:Repository::pulum-1e1f83bf-container",
+                        "urn:pulumi:signal-us::signal::cloud:service:Service$aws:cloudwatch/logGroup:LogGroup::signal-runner"
                     ],
                     "executionRoleArn": [
-                        "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo--execution"
+                        "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal--execution"
                     ],
                     "family": null,
                     "memory": [
-                        "urn:pulumi:demo-us::demo::aws:ecr/repository:Repository::pulum-1e1f83bf-container",
-                        "urn:pulumi:demo-us::demo::cloud:service:Service$aws:cloudwatch/logGroup:LogGroup::demo-runner"
+                        "urn:pulumi:signal-us::signal::aws:ecr/repository:Repository::pulum-1e1f83bf-container",
+                        "urn:pulumi:signal-us::signal::cloud:service:Service$aws:cloudwatch/logGroup:LogGroup::signal-runner"
                     ],
                     "networkMode": null,
                     "requiresCompatibilities": null,
                     "taskRoleArn": [
-                        "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo-us-task"
+                        "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal-us-task"
                     ],
                     "volumes": null
                 },
@@ -286,10 +315,10 @@
         },
         {
             "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-demo--execution",
-            "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-signal--execution",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
             "newState": {
-                "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-demo--execution",
+                "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-signal--execution",
                 "custom": true,
                 "type": "aws:iam/rolePolicyAttachment:RolePolicyAttachment",
                 "inputs": {
@@ -297,15 +326,15 @@
                     "policyArn": "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy",
                     "role": "04da6b54-80e4-46f7-96ec-b56ff0331ba9"
                 },
-                "parent": "urn:pulumi:demo-us::demo::cloud:global:infrastructure::global-infrastructure",
+                "parent": "urn:pulumi:signal-us::signal::cloud:global:infrastructure::global-infrastructure",
                 "dependencies": [
-                    "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo--execution"
+                    "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal--execution"
                 ],
-                "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
                 "propertyDependencies": {
                     "policyArn": null,
                     "role": [
-                        "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo--execution"
+                        "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal--execution"
                     ]
                 },
                 "sourcePosition": "project:///node_modules/@pulumi/service.ts#478,19"
@@ -314,38 +343,10 @@
         },
         {
             "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-a1de8170",
-            "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-6c156834",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
             "newState": {
-                "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-a1de8170",
-                "custom": true,
-                "type": "aws:iam/rolePolicyAttachment:RolePolicyAttachment",
-                "inputs": {
-                    "__defaults": [],
-                    "policyArn": "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess",
-                    "role": "04da6b54-80e4-46f7-96ec-b56ff0331ba9"
-                },
-                "parent": "urn:pulumi:demo-us::demo::cloud:global:infrastructure::global-infrastructure",
-                "dependencies": [
-                    "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo-us-task"
-                ],
-                "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
-                "propertyDependencies": {
-                    "policyArn": null,
-                    "role": [
-                        "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo-us-task"
-                    ]
-                },
-                "sourcePosition": "project:///node_modules/@pulumi/service.ts#461,23"
-            },
-            "detailedDiff": null
-        },
-        {
-            "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-6c156834",
-            "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
-            "newState": {
-                "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-6c156834",
+                "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-6c156834",
                 "custom": true,
                 "type": "aws:iam/rolePolicyAttachment:RolePolicyAttachment",
                 "inputs": {
@@ -353,15 +354,15 @@
                     "policyArn": "arn:aws:iam::aws:policy/CloudWatchFullAccess",
                     "role": "04da6b54-80e4-46f7-96ec-b56ff0331ba9"
                 },
-                "parent": "urn:pulumi:demo-us::demo::cloud:global:infrastructure::global-infrastructure",
+                "parent": "urn:pulumi:signal-us::signal::cloud:global:infrastructure::global-infrastructure",
                 "dependencies": [
-                    "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo-us-task"
+                    "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal-us-task"
                 ],
-                "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
                 "propertyDependencies": {
                     "policyArn": null,
                     "role": [
-                        "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo-us-task"
+                        "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal-us-task"
                     ]
                 },
                 "sourcePosition": "project:///node_modules/@pulumi/service.ts#461,23"
@@ -370,38 +371,10 @@
         },
         {
             "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-b5aeb6b6",
-            "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-f3372347",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
             "newState": {
-                "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-b5aeb6b6",
-                "custom": true,
-                "type": "aws:iam/rolePolicyAttachment:RolePolicyAttachment",
-                "inputs": {
-                    "__defaults": [],
-                    "policyArn": "arn:aws:iam::aws:policy/AWSLambda_FullAccess",
-                    "role": "04da6b54-80e4-46f7-96ec-b56ff0331ba9"
-                },
-                "parent": "urn:pulumi:demo-us::demo::cloud:global:infrastructure::global-infrastructure",
-                "dependencies": [
-                    "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo-us-task"
-                ],
-                "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
-                "propertyDependencies": {
-                    "policyArn": null,
-                    "role": [
-                        "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo-us-task"
-                    ]
-                },
-                "sourcePosition": "project:///node_modules/@pulumi/service.ts#461,23"
-            },
-            "detailedDiff": null
-        },
-        {
-            "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-f3372347",
-            "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
-            "newState": {
-                "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-f3372347",
+                "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-f3372347",
                 "custom": true,
                 "type": "aws:iam/rolePolicyAttachment:RolePolicyAttachment",
                 "inputs": {
@@ -409,15 +382,15 @@
                     "policyArn": "arn:aws:iam::aws:policy/AmazonSNSFullAccess",
                     "role": "04da6b54-80e4-46f7-96ec-b56ff0331ba9"
                 },
-                "parent": "urn:pulumi:demo-us::demo::cloud:global:infrastructure::global-infrastructure",
+                "parent": "urn:pulumi:signal-us::signal::cloud:global:infrastructure::global-infrastructure",
                 "dependencies": [
-                    "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo-us-task"
+                    "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal-us-task"
                 ],
-                "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
                 "propertyDependencies": {
                     "policyArn": null,
                     "role": [
-                        "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo-us-task"
+                        "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal-us-task"
                     ]
                 },
                 "sourcePosition": "project:///node_modules/@pulumi/service.ts#461,23"
@@ -426,26 +399,26 @@
         },
         {
             "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-4aaabb8e",
-            "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-b5aeb6b6",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
             "newState": {
-                "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-4aaabb8e",
+                "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-b5aeb6b6",
                 "custom": true,
                 "type": "aws:iam/rolePolicyAttachment:RolePolicyAttachment",
                 "inputs": {
                     "__defaults": [],
-                    "policyArn": "arn:aws:iam::aws:policy/AmazonS3FullAccess",
+                    "policyArn": "arn:aws:iam::aws:policy/AWSLambda_FullAccess",
                     "role": "04da6b54-80e4-46f7-96ec-b56ff0331ba9"
                 },
-                "parent": "urn:pulumi:demo-us::demo::cloud:global:infrastructure::global-infrastructure",
+                "parent": "urn:pulumi:signal-us::signal::cloud:global:infrastructure::global-infrastructure",
                 "dependencies": [
-                    "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo-us-task"
+                    "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal-us-task"
                 ],
-                "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
                 "propertyDependencies": {
                     "policyArn": null,
                     "role": [
-                        "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo-us-task"
+                        "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal-us-task"
                     ]
                 },
                 "sourcePosition": "project:///node_modules/@pulumi/service.ts#461,23"
@@ -454,10 +427,38 @@
         },
         {
             "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-0cbb1731",
-            "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-a1de8170",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
             "newState": {
-                "urn": "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-0cbb1731",
+                "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-a1de8170",
+                "custom": true,
+                "type": "aws:iam/rolePolicyAttachment:RolePolicyAttachment",
+                "inputs": {
+                    "__defaults": [],
+                    "policyArn": "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess",
+                    "role": "04da6b54-80e4-46f7-96ec-b56ff0331ba9"
+                },
+                "parent": "urn:pulumi:signal-us::signal::cloud:global:infrastructure::global-infrastructure",
+                "dependencies": [
+                    "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal-us-task"
+                ],
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "propertyDependencies": {
+                    "policyArn": null,
+                    "role": [
+                        "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal-us-task"
+                    ]
+                },
+                "sourcePosition": "project:///node_modules/@pulumi/service.ts#461,23"
+            },
+            "detailedDiff": null
+        },
+        {
+            "op": "create",
+            "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-0cbb1731",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "newState": {
+                "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-0cbb1731",
                 "custom": true,
                 "type": "aws:iam/rolePolicyAttachment:RolePolicyAttachment",
                 "inputs": {
@@ -465,15 +466,15 @@
                     "policyArn": "arn:aws:iam::aws:policy/AmazonECS_FullAccess",
                     "role": "04da6b54-80e4-46f7-96ec-b56ff0331ba9"
                 },
-                "parent": "urn:pulumi:demo-us::demo::cloud:global:infrastructure::global-infrastructure",
+                "parent": "urn:pulumi:signal-us::signal::cloud:global:infrastructure::global-infrastructure",
                 "dependencies": [
-                    "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo-us-task"
+                    "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal-us-task"
                 ],
-                "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
                 "propertyDependencies": {
                     "policyArn": null,
                     "role": [
-                        "urn:pulumi:demo-us::demo::cloud:global:infrastructure$aws:iam/role:Role::pulumi-demo-us-task"
+                        "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal-us-task"
                     ]
                 },
                 "sourcePosition": "project:///node_modules/@pulumi/service.ts#461,23"
@@ -482,22 +483,50 @@
         },
         {
             "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::awsx:network:Network::default-vpc",
+            "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-4aaabb8e",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
             "newState": {
-                "urn": "urn:pulumi:demo-us::demo::awsx:network:Network::default-vpc",
+                "urn": "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/rolePolicyAttachment:RolePolicyAttachment::pulumi-sig-task-4aaabb8e",
+                "custom": true,
+                "type": "aws:iam/rolePolicyAttachment:RolePolicyAttachment",
+                "inputs": {
+                    "__defaults": [],
+                    "policyArn": "arn:aws:iam::aws:policy/AmazonS3FullAccess",
+                    "role": "04da6b54-80e4-46f7-96ec-b56ff0331ba9"
+                },
+                "parent": "urn:pulumi:signal-us::signal::cloud:global:infrastructure::global-infrastructure",
+                "dependencies": [
+                    "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal-us-task"
+                ],
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "propertyDependencies": {
+                    "policyArn": null,
+                    "role": [
+                        "urn:pulumi:signal-us::signal::cloud:global:infrastructure$aws:iam/role:Role::pulumi-signal-us-task"
+                    ]
+                },
+                "sourcePosition": "project:///node_modules/@pulumi/service.ts#461,23"
+            },
+            "detailedDiff": null
+        },
+        {
+            "op": "create",
+            "urn": "urn:pulumi:signal-us::signal::awsx:network:Network::default-vpc",
+            "newState": {
+                "urn": "urn:pulumi:signal-us::signal::awsx:network:Network::default-vpc",
                 "custom": false,
                 "type": "awsx:network:Network",
-                "parent": "urn:pulumi:demo-us::demo::pulumi:pulumi:Stack::demo-demo-us",
+                "parent": "urn:pulumi:signal-us::signal::pulumi:pulumi:Stack::signal-signal-us",
                 "sourcePosition": "project:///node_modules/@pulumi/network.ts#184,16"
             },
             "detailedDiff": null
         },
         {
             "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::awsx:cluster:Cluster$aws:ec2/securityGroup:SecurityGroup::pulumi-demo-us-global",
-            "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "urn": "urn:pulumi:signal-us::signal::awsx:cluster:Cluster$aws:ec2/securityGroup:SecurityGroup::pulumi-signal-us-global",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
             "newState": {
-                "urn": "urn:pulumi:demo-us::demo::awsx:cluster:Cluster$aws:ec2/securityGroup:SecurityGroup::pulumi-demo-us-global",
+                "urn": "urn:pulumi:signal-us::signal::awsx:cluster:Cluster$aws:ec2/securityGroup:SecurityGroup::pulumi-signal-us-global",
                 "custom": true,
                 "type": "aws:ec2/securityGroup:SecurityGroup",
                 "inputs": {
@@ -546,16 +575,16 @@
                             "toPort": 65535
                         }
                     ],
-                    "name": "pulumi-demo-us-global-179a40a",
+                    "name": "pulumi-signal-us-global-e795d11",
                     "revokeRulesOnDelete": false,
                     "tags": {
-                        "Name": "pulumi-demo-us-global",
+                        "Name": "pulumi-signal-us-global",
                         "__defaults": []
                     },
                     "vpcId": "vpc-5b3e2d39"
                 },
-                "parent": "urn:pulumi:demo-us::demo::awsx:cluster:Cluster::pulumi-demo-us-global",
-                "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "parent": "urn:pulumi:signal-us::signal::awsx:cluster:Cluster::pulumi-signal-us-global",
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
                 "propertyDependencies": {
                     "description": null,
                     "egress": null,
@@ -569,10 +598,10 @@
         },
         {
             "op": "create",
-            "urn": "urn:pulumi:demo-us::demo::cloud:service:Service$aws:ecs/service:Service::demo-runner",
-            "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+            "urn": "urn:pulumi:signal-us::signal::cloud:service:Service$aws:ecs/service:Service::signal-runner",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
             "newState": {
-                "urn": "urn:pulumi:demo-us::demo::cloud:service:Service$aws:ecs/service:Service::demo-runner",
+                "urn": "urn:pulumi:signal-us::signal::cloud:service:Service$aws:ecs/service:Service::signal-runner",
                 "custom": true,
                 "type": "aws:ecs/service:Service",
                 "inputs": {
@@ -592,7 +621,7 @@
                     "enableExecuteCommand": false,
                     "launchType": "FARGATE",
                     "loadBalancers": [],
-                    "name": "demo-runner-d564612",
+                    "name": "signal-runner-0db1747",
                     "networkConfiguration": {
                         "__defaults": [],
                         "assignPublicIp": true,
@@ -608,25 +637,25 @@
                     "taskDefinition": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
                     "waitForSteadyState": true
                 },
-                "parent": "urn:pulumi:demo-us::demo::cloud:service:Service::demo-runner",
+                "parent": "urn:pulumi:signal-us::signal::cloud:service:Service::signal-runner",
                 "dependencies": [
-                    "urn:pulumi:demo-us::demo::awsx:cluster:Cluster$aws:ecs/cluster:Cluster::pulumi-demo-us-global",
-                    "urn:pulumi:demo-us::demo::awsx:cluster:Cluster$aws:ec2/securityGroup:SecurityGroup::pulumi-demo-us-global",
-                    "urn:pulumi:demo-us::demo::cloud:service:Service$aws:ecs/taskDefinition:TaskDefinition::demo-runner"
+                    "urn:pulumi:signal-us::signal::awsx:cluster:Cluster$aws:ecs/cluster:Cluster::pulumi-signal-us-global",
+                    "urn:pulumi:signal-us::signal::awsx:cluster:Cluster$aws:ec2/securityGroup:SecurityGroup::pulumi-signal-us-global",
+                    "urn:pulumi:signal-us::signal::cloud:service:Service$aws:ecs/taskDefinition:TaskDefinition::signal-runner"
                 ],
-                "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_5_42_0::04da6b54-80e4-46f7-96ec-b56ff0331ba9",
                 "propertyDependencies": {
                     "cluster": [
-                        "urn:pulumi:demo-us::demo::awsx:cluster:Cluster$aws:ecs/cluster:Cluster::pulumi-demo-us-global"
+                        "urn:pulumi:signal-us::signal::awsx:cluster:Cluster$aws:ecs/cluster:Cluster::pulumi-signal-us-global"
                     ],
                     "desiredCount": null,
                     "launchType": null,
                     "loadBalancers": null,
                     "networkConfiguration": [
-                        "urn:pulumi:demo-us::demo::awsx:cluster:Cluster$aws:ec2/securityGroup:SecurityGroup::pulumi-demo-us-global"
+                        "urn:pulumi:signal-us::signal::awsx:cluster:Cluster$aws:ec2/securityGroup:SecurityGroup::pulumi-signal-us-global"
                     ],
                     "taskDefinition": [
-                        "urn:pulumi:demo-us::demo::cloud:service:Service$aws:ecs/taskDefinition:TaskDefinition::demo-runner"
+                        "urn:pulumi:signal-us::signal::cloud:service:Service$aws:ecs/taskDefinition:TaskDefinition::signal-runner"
                     ],
                     "waitForSteadyState": null
                 },
@@ -636,10 +665,10 @@
         },
         {
             "op": "delete",
-            "urn": "urn:pulumi:demo-us::demo::aws:ecs/cluster:Cluster::cluster",
-            "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_6_8_0::70283f37-a4eb-4f26-8711-57c3ff44ad4e",
+            "urn": "urn:pulumi:signal-us::signal::aws:ecs/cluster:Cluster::cluster",
+            "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_6_8_0::70283f37-a4eb-4f26-8711-57c3ff44ad4e",
             "oldState": {
-                "urn": "urn:pulumi:demo-us::demo::aws:ecs/cluster:Cluster::cluster",
+                "urn": "urn:pulumi:signal-us::signal::aws:ecs/cluster:Cluster::cluster",
                 "custom": true,
                 "id": "arn:aws:ecs:us-west-2:129966181679:cluster/cluster-0601844",
                 "type": "aws:ecs/cluster:Cluster",
@@ -663,8 +692,8 @@
                     "tags": {},
                     "tagsAll": "[secret]"
                 },
-                "parent": "urn:pulumi:demo-us::demo::pulumi:pulumi:Stack::demo-demo-us",
-                "provider": "urn:pulumi:demo-us::demo::pulumi:providers:aws::default_6_8_0::70283f37-a4eb-4f26-8711-57c3ff44ad4e",
+                "parent": "urn:pulumi:signal-us::signal::pulumi:pulumi:Stack::signal-signal-us",
+                "provider": "urn:pulumi:signal-us::signal::pulumi:providers:aws::default_6_8_0::70283f37-a4eb-4f26-8711-57c3ff44ad4e",
                 "additionalSecretOutputs": [
                     "tagsAll"
                 ],
@@ -675,9 +704,9 @@
             "detailedDiff": null
         }
     ],
-    "duration": 3829655667,
+    "duration": 7399130500,
     "changeSummary": {
-        "create": 20,
+        "create": 21,
         "delete": 1,
         "same": 1
     }
